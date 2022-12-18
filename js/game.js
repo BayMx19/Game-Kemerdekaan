@@ -44,7 +44,7 @@ function startScreen(){
 function halamanCover(){
 	hapusLayar("#9c9695");
 	gambarFull(dataGambar.cover);
-	musik(dataSuara.kemerdekaan, 20);
+	musik(dataSuara.kemerdekaan, 40);
 	var playBtn = tombol(dataGambar.playBtn, 600, 420);
 	if (tekan(playBtn) || game.spasi){
 		if (game.aktif) {
@@ -112,7 +112,7 @@ function gameLoop(){
 		gerakLevel(game.hero, -3, 0);
 	}
 	if (game.atas){
-		mainkanSuara(dataSuara.lompat, 5);
+		mainkanSuara(dataSuara.lompat, 10);
 		gerakLevel(game.hero, 0, -10);
 	
 	}
