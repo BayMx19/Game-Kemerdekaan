@@ -18,8 +18,8 @@ var gambar = {
 	item1:"Strawberry.png",
 	item2:"Kiwi.png",
 	musuh1Idle:"musuh.png",
-	musuh1Run:"musuh 2.png",
-	musuh1Hit:"musuh 3.png",
+	musuh1Run:"musuh2.png",
+	musuh1Hit:"musuh3.png",
 	bendera:"bendera.png"
 }
 //file suara yang dipakai dalam game
@@ -112,7 +112,7 @@ function gameLoop(){
 		gerakLevel(game.hero, -3, 0);
 	}
 	if (game.atas){
-		mainkanSuara(dataSuara.lompat, 10);
+		mainkanSuara(dataSuara.lompat, 100);
 		gerakLevel(game.hero, 0, -10);
 	
 	}
